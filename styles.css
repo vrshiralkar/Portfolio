@@ -49,19 +49,6 @@ body {
     color: #E4E4DE;
 }
 
-/* Make the menu vertical on mobile devices */
-@media (max-width: 767px) {
-    .navbar .menu {
-        flex-direction: column; /* Stack links vertically */
-        gap: 15px;
-        text-align: center; /* Center align the links */
-    }
-
-    .navbar {
-        padding: 15px 0 30px 0; /* Extra padding at the bottom for spacing */
-    }
-}
-
 /* Home Section */
 .home {
     background-color: #1B1B1B;
@@ -133,6 +120,7 @@ body {
         transform: translateY(0);
     }
 }
+
 .hidden {
     display: none;
 }
@@ -183,25 +171,25 @@ body {
 /* Contact Info Section */
 .contact-info {
     display: flex;
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Vertically align icons and text */
-    gap: 30px; /* Space between each contact item */
-    flex-wrap: nowrap; /* Prevent wrapping to ensure all items are on the same line */
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
     margin-top: 30px;
     width: 100%;
-    max-width: 900px; /* Ensure it fits within the container */
+    max-width: 900px;
 }
 
 .contact-item {
     display: flex;
-    align-items: center; /* Vertically align icon and text */
-    gap: 10px; /* Space between icon and text */
-    flex-shrink: 0; /* Prevent items from shrinking too much */
-    white-space: nowrap; /* Prevent line breaks within the item */
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .contact-item i {
-    font-size: 1.5em; /* Icon size */
+    font-size: 1.5em;
     color: #E4E4DE;
 }
 
@@ -218,8 +206,8 @@ body {
 
 /* Work Section */
 .work {
-    background-color: #1B1B1B; /* Match About and Home section background */
-    color: #C4C5BA; /* Match text color */
+    background-color: #1B1B1B;
+    color: #C4C5BA;
     text-align: center;
 }
 
@@ -236,7 +224,7 @@ body {
 }
 
 .project {
-    background-color: #C4C5BA; /* Background for project cards */
+    background-color: #C4C5BA;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
@@ -274,7 +262,7 @@ body {
     width: 100%;
     height: 2px;
     background: linear-gradient(transparent, #C4C5BA);
-    margin: 60px 0; /* Adjust as needed for spacing */
+    margin: 60px 0;
 }
 
 /* Footer */
@@ -288,4 +276,106 @@ footer {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Tablet adjustments */
+    .portfolio-title {
+        font-size: 8em; /* Adjust font size for tablets */
+    }
+
+    .intro-details h1 {
+        font-size: 3.5em; /* Adjust name size */
+    }
+
+    .intro-details h2 {
+        font-size: 2em; /* Adjust position size */
+    }
+
+    .resume-btn {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-text h2 {
+        font-size: 2.2em;
+    }
+
+    .work h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile adjustments */
+    .navbar .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home {
+        padding: 0 10px;
+    }
+
+    .portfolio-title {
+        font-size: 4em; /* Adjust font size for mobile */
+    }
+
+    .intro-details h1 {
+        font-size: 2em;
+    }
+
+    .intro-details h2 {
+        font-size: 1.5em;
+    }
+
+    .resume-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .about-container {
+        padding: 0 10px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-text h2 {
+        font-size: 1.5em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .work h2 {
+        font-size: 1.8em;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+    .separator {
+        margin: 30px 0;
+    }
 }

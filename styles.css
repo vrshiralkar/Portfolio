@@ -59,7 +59,7 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 0 20px;
+    padding: 0 20px; /* Adjust padding for mobile devices */
 }
 
 .portfolio-title {
@@ -282,7 +282,7 @@ html {
 @media (max-width: 1024px) {
     /* Tablet adjustments */
     .portfolio-title {
-        font-size: 8em; /* Slightly smaller for tablets */
+        font-size: 8em; /* Adjust font size for tablets */
     }
 
     .intro-details h1 {
@@ -324,24 +324,24 @@ html {
     }
 
     .portfolio-title {
-        font-size: 6em; /* Smaller for mobile */
+        font-size: 4em; /* Adjust font size for mobile */
     }
 
     .intro-details h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .intro-details h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .resume-btn {
-        font-size: 1.1em;
+        font-size: 1em;
         padding: 10px 20px;
     }
 
     .about-container {
-        padding: 0 10px; /* Ensure about content fits within smaller screens */
+        padding: 0 10px;
     }
 
     .profile-img {
@@ -350,7 +350,7 @@ html {
     }
 
     .about-text h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .about-text p {
@@ -358,7 +358,7 @@ html {
     }
 
     .contact-info {
-        flex-direction: column; /* Stack contacts vertically on mobile */
+        flex-direction: column;
         gap: 15px;
     }
 
@@ -367,7 +367,7 @@ html {
     }
 
     .projects {
-        flex-direction: column; /* Stack projects vertically on mobile */
+        flex-direction: column;
     }
 
     .project {

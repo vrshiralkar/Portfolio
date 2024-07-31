@@ -59,7 +59,7 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 0 20px; /* Padding to prevent content from touching screen edges on smaller devices */
+    padding: 0 20px;
 }
 
 .portfolio-title {
@@ -70,21 +70,21 @@ body {
 }
 
 .intro-details h1 {
-    font-size: 4em; /* Increase font size for name */
-    margin-bottom: 0.5em; /* Add some space below the name */
+    font-size: 4em;
+    margin-bottom: 0.5em;
     color: #E4E4DE; /* Ethereal Ivory color */
     opacity: 0;
-    transform: translateY(30px); /* Start slightly lower */
-    animation: fadeInUp 1.5s ease-in-out 3s forwards; /* Animation with timing adjustments */
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-in-out 3s forwards;
 }
 
 .intro-details h2 {
-    font-size: 2.5em; /* Increase font size for position */
-    margin-bottom: 1em; /* Add space below the position */
+    font-size: 2.5em;
+    margin-bottom: 1em;
     color: #C4C5BA; /* Sophisticated Sage color */
     opacity: 0;
-    transform: translateY(30px); /* Start slightly lower */
-    animation: fadeInUp 1.5s ease-in-out 3.5s forwards; /* Animation with timing adjustments */
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-in-out 3.5s forwards;
 }
 
 .resume-btn {
@@ -95,31 +95,32 @@ body {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
-    border-radius: 10px; /* More rounded corners */
+    border-radius: 10px;
     margin-top: 20px;
     opacity: 0;
-    transform: translateY(30px); /* Start slightly lower */
-    animation: fadeInUp 1.5s ease-in-out 4s forwards; /* Animation with timing adjustments */
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-in-out 4s forwards;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .resume-btn:hover {
-    background-color: #C4C5BA; /* Lighten on hover */
-    color: #1B1B1B; /* Dark text on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    background-color: #C4C5BA;
+    color: #1B1B1B;
+    transform: scale(1.05);
 }
 
 /* Keyframes for fade-in effect */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(30px); /* Start with a slight downward offset */
+        transform: translateY(30px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* End at the natural position */
+        transform: translateY(0);
     }
 }
+
 .hidden {
     display: none;
 }
@@ -170,25 +171,25 @@ body {
 /* Contact Info Section */
 .contact-info {
     display: flex;
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Vertically align icons and text */
-    gap: 30px; /* Space between each contact item */
-    flex-wrap: nowrap; /* Prevent wrapping to ensure all items are on the same line */
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
     margin-top: 30px;
     width: 100%;
-    max-width: 900px; /* Ensure it fits within the container */
+    max-width: 900px;
 }
 
 .contact-item {
     display: flex;
-    align-items: center; /* Vertically align icon and text */
-    gap: 10px; /* Space between icon and text */
-    flex-shrink: 0; /* Prevent items from shrinking too much */
-    white-space: nowrap; /* Prevent line breaks within the item */
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .contact-item i {
-    font-size: 1.5em; /* Icon size */
+    font-size: 1.5em;
     color: #E4E4DE;
 }
 
@@ -205,8 +206,8 @@ body {
 
 /* Work Section */
 .work {
-    background-color: #1B1B1B; /* Match About and Home section background */
-    color: #C4C5BA; /* Match text color */
+    background-color: #1B1B1B;
+    color: #C4C5BA;
     text-align: center;
 }
 
@@ -223,7 +224,7 @@ body {
 }
 
 .project {
-    background-color: #C4C5BA; /* Background for project cards */
+    background-color: #C4C5BA;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
@@ -261,7 +262,7 @@ body {
     width: 100%;
     height: 2px;
     background: linear-gradient(transparent, #C4C5BA);
-    margin: 60px 0; /* Adjust as needed for spacing */
+    margin: 60px 0;
 }
 
 /* Footer */

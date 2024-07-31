@@ -36,6 +36,7 @@ body {
 
 .navbar .menu {
     display: flex;
+    flex-direction: row;
     gap: 30px;
 }
 
@@ -316,7 +317,8 @@ html {
     /* Mobile adjustments */
     .navbar .menu {
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
+        flex-wrap: nowrap
     }
 
     .home {

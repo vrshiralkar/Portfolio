@@ -59,6 +59,7 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
+    padding: 0 20px; /* Padding to prevent content from touching screen edges on smaller devices */
 }
 
 .portfolio-title {
@@ -122,7 +123,6 @@ body {
 .hidden {
     display: none;
 }
-
 
 /* About Section */
 .about {
@@ -275,4 +275,106 @@ footer {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Tablet adjustments */
+    .portfolio-title {
+        font-size: 8em; /* Slightly smaller for tablets */
+    }
+
+    .intro-details h1 {
+        font-size: 3.5em; /* Adjust name size */
+    }
+
+    .intro-details h2 {
+        font-size: 2em; /* Adjust position size */
+    }
+
+    .resume-btn {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-text h2 {
+        font-size: 2.2em;
+    }
+
+    .work h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile adjustments */
+    .navbar .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home {
+        padding: 0 10px;
+    }
+
+    .portfolio-title {
+        font-size: 6em; /* Smaller for mobile */
+    }
+
+    .intro-details h1 {
+        font-size: 2.5em;
+    }
+
+    .intro-details h2 {
+        font-size: 1.8em;
+    }
+
+    .resume-btn {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .about-container {
+        padding: 0 10px; /* Ensure about content fits within smaller screens */
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-text h2 {
+        font-size: 1.8em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .contact-info {
+        flex-direction: column; /* Stack contacts vertically on mobile */
+        gap: 15px;
+    }
+
+    .work h2 {
+        font-size: 1.8em;
+    }
+
+    .projects {
+        flex-direction: column; /* Stack projects vertically on mobile */
+    }
+
+    .project {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+    .separator {
+        margin: 30px 0;
+    }
 }

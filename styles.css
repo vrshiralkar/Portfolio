@@ -315,7 +315,7 @@ html {
 @media (max-width: 767px) {
     /* Mobile adjustments */
     .navbar .menu {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
     }
 

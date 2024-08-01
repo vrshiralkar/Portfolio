@@ -63,12 +63,13 @@ body {
     padding: 0 20px; /* Adjust padding for mobile devices */
 }
 
+/* Portfolio Title Animation */
 .portfolio-title {
     font-size: 10em;
     font-weight: bold;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    animation: fadeOut 1s ease-in-out 2s forwards; /* Fade-out duration 1s, delay 2s */
+    transition: opacity 0.8s ease-in-out; /* Shorter duration for faster fade-out */
+    animation: fadeOut 0.8s ease-in-out 2s forwards; /* Fade-out duration 0.8s, delay 2s */
 }
 
 /* Name (h1) Animation */
@@ -78,7 +79,7 @@ body {
     color: #E4E4DE;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* Reduced delay to 2.5s */
+    animation: fadeInUp 0.3s ease-in-out 0.03s forwards; /* Starts immediately after portfolio fades */
 }
 
 /* Position (h2) Animation */
@@ -88,7 +89,7 @@ body {
     color: #C4C5BA;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* Reduced delay to 3s */
+    animation: fadeInUp 0.3s ease-in-out 0.08s forwards; /* Minimal delay after name */
 }
 
 /* Resume Button Animation */
@@ -104,7 +105,7 @@ body {
     margin-top: 20px;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* Reduced delay to 3.5s */
+    animation: fadeInUp 0.3s ease-in-out 0.13s forwards; /* Minimal delay after position */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 

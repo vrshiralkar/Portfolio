@@ -68,31 +68,35 @@ body {
     font-weight: bold;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    animation: fadeOut 1s ease-in-out 2s forwards; /* Fade-out duration 1s, delay 2s */
 }
 
+/* Name (h1) Animation */
 .intro-details h1 {
     font-size: 4em;
     margin-bottom: 0.5em;
-    color: #E4E4DE; /* Ethereal Ivory color */
+    color: #E4E4DE;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1.0s ease-in-out 2.5s forwards;
+    animation: fadeInUp 0.5s ease-in-out 2.5s forwards; /* Reduced delay to 2.5s */
 }
 
+/* Position (h2) Animation */
 .intro-details h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
-    color: #C4C5BA; /* Sophisticated Sage color */
+    color: #C4C5BA;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1.0s ease-in-out 2.0s forwards;
+    animation: fadeInUp 0.5s ease-in-out 3s forwards; /* Reduced delay to 3s */
 }
 
+/* Resume Button Animation */
 .resume-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #595f39; /* Muted Moss background */
-    color: #E4E4DE; /* Ethereal Ivory text */
+    background-color: #595f39;
+    color: #E4E4DE;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
@@ -100,14 +104,8 @@ body {
     margin-top: 20px;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1.0s ease-in-out 2.5s forwards;
+    animation: fadeInUp 0.5s ease-in-out 3.5s forwards; /* Reduced delay to 3.5s */
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.resume-btn:hover {
-    background-color: #C4C5BA;
-    color: #1B1B1B;
-    transform: scale(1.05);
 }
 
 /* Keyframes for fade-in effect */
@@ -119,6 +117,16 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Keyframes for fade-out effect */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -369,7 +377,6 @@ html {
     }
 
     .projects {
-        display: flex;
         flex-direction: column;
     }
 

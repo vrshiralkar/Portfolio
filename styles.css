@@ -331,11 +331,13 @@ html {
     }
 
     .home {
-        padding: 0 10px;
+        padding: 0 10px; /* Ensure content doesn't touch the edges on mobile */
+        text-align: center; /* Center text for mobile */
     }
 
     .portfolio-title {
-        font-size: 4em; /* Adjust font size for mobile */
+        font-size: 6em; /* Adjust font size for mobile */
+        line-height: 1; /* Adjust font size for mobile */
     }
 
     .intro-details h1 {

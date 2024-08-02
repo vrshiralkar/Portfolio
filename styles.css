@@ -331,18 +331,12 @@ html {
     }
 
     .home {
-        padding: 0 10px;        /* Ensure content doesn't touch the edges */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: relative;;    /* Ensure all content is centered */
+        padding: 0 10px;
     }
 
     .portfolio-title {
-        font-size: 5em;         /* Adjust font size for better fit */
-        line-height: 1.2;       /* Adjust line height to center text */
-        margin: 0;              /* Remove any default margins */
+        font-size: 4em; /* Adjust font size for mobile */
+        position: fixed;
     }
 
     .intro-details h1 {

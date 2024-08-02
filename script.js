@@ -14,5 +14,5 @@ window.onload = function () {
         portfolioTitle.style.display = 'none'; // Hide "PORTFOLIO" after fade-out
         introDetails.style.display = 'block';  // Show the name/position/resume section
         introDetails.style.opacity = '1';      // Fade-in the name/position/resume section
-    }, 3000); // 2 seconds after starting fade-out, show the intro details
+    }, 5000); // 2 seconds after starting fade-out, show the intro details
 };

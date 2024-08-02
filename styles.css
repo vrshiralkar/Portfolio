@@ -332,11 +332,11 @@ html {
 
     .home {
         padding: 0 10px;        /* Ensure content doesn't touch the edges */
-        text-align: center;     /* Center text horizontally */
-        display: flex;          /* Use flexbox to center content */
-        flex-direction: column; /* Stack items vertically */
-        justify-content: center;/* Center content vertically */
-        align-items: center;    /* Ensure all content is centered */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;;    /* Ensure all content is centered */
     }
 
     .portfolio-title {

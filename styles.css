@@ -335,8 +335,7 @@ html {
     }
 
     .portfolio-title {
-        font-size: 5em; /* Adjust font size for mobile */
-        position: static;
+        font-size: 4em; /* Adjust font size for mobile */
     }
 
     .intro-details h1 {

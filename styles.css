@@ -1,9 +1,18 @@
+/* Define CSS Variables */
+:root {
+    --background-color: #1B1B1B; /* Timeless Noir background */
+    --font-color-main: #C4C5BA; /* Sophisticated Sage font color */
+    --font-color-highlight: #E4E4DE; /* Ethereal Ivory */
+    --link-hover-color: #595f39; /* Hover color */
+    --transition-duration: 0.3s; /* Global transition duration */
+}
+
 /* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1B1B1B; /* Timeless Noir background */
-    color: #C4C5BA; /* Sophisticated Sage font color */
+    background-color: var(--background-color);
+    color: var(--font-color-main);
 }
 
 .container {
@@ -18,8 +27,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #1B1B1B;
-    color: #C4C5BA;
+    background-color: var(--background-color);
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -36,31 +44,30 @@ body {
 
 .navbar .menu {
     display: flex;
-    flex-direction: row;
     gap: 30px;
 }
 
 .navbar .menu a {
-    color: #C4C5BA;
+    color: var(--font-color-main);
     text-decoration: none;
     font-size: 1em;
+    transition: color var(--transition-duration);
 }
 
 .navbar .menu a:hover {
-    color: #E4E4DE;
+    color: var(--font-color-highlight);
 }
 
 /* Home Section */
 .home {
-    background-color: #1B1B1B;
-    color: #C4C5BA;
+    background-color: var(--background-color);
+    color: var(--font-color-main);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
-    padding: 0 20px; /* Adjust padding for mobile devices */
+    padding: 0 20px;
 }
 
 /* Portfolio Title Animation */
@@ -68,36 +75,36 @@ body {
     font-size: 10em;
     font-weight: bold;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out; /* Shorter duration for faster fade-out */
-    animation: fadeOut 0.8s ease-in-out 2s forwards; /* Fade-out duration 0.8s, delay 2s */
+    transition: opacity 0.8s ease-in-out;
+    animation: fadeOut 0.8s ease-in-out 2s forwards;
 }
 
 /* Name (h1) Animation */
 .intro-details h1 {
     font-size: 4em;
     margin-bottom: 0.5em;
-    color: #E4E4DE;
+    color: var(--font-color-highlight);
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.3s ease-in-out 0.03s forwards; /* Starts immediately after portfolio fades */
+    animation: fadeInUp 0.3s ease-in-out 0.03s forwards;
 }
 
 /* Position (h2) Animation */
 .intro-details h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
-    color: #C4C5BA;
+    color: var(--font-color-main);
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.3s ease-in-out 0.08s forwards; /* Minimal delay after name */
+    animation: fadeInUp 0.3s ease-in-out 0.08s forwards;
 }
 
 /* Resume Button Animation */
 .resume-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #595f39;
-    color: #E4E4DE;
+    background-color: var(--link-hover-color);
+    color: var(--font-color-highlight);
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
@@ -105,8 +112,13 @@ body {
     margin-top: 20px;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.3s ease-in-out 0.13s forwards; /* Minimal delay after position */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 0.3s ease-in-out 0.13s forwards;
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+}
+
+.resume-btn:hover {
+    background-color: var(--font-color-main);
+    transform: translateY(-5px);
 }
 
 /* Keyframes for fade-in effect */
@@ -137,9 +149,9 @@ body {
 
 /* About Section */
 .about {
-    background-color: #1B1B1B;
+    background-color: var(--background-color);
     text-align: center;
-    color: #C4C5BA;
+    color: var(--font-color-main);
 }
 
 .about-container {
@@ -158,7 +170,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     object-fit: cover;
     object-position: top;
-    border: 5px solid #C4C5BA;
+    border: 5px solid var(--font-color-main);
 }
 
 .about-text {
@@ -200,24 +212,24 @@ body {
 
 .contact-item i {
     font-size: 1.5em;
-    color: #E4E4DE;
+    color: var(--font-color-highlight);
 }
 
 .contact-item span,
 .contact-item a {
-    color: #E4E4DE;
+    color: var(--font-color-highlight);
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact-item a:hover {
-    color: #595f39;
+    color: var(--link-hover-color);
 }
 
 /* Work Section */
 .work {
-    background-color: #1B1B1B;
-    color: #C4C5BA;
+    background-color: var(--background-color);
+    color: var(--font-color-main);
     text-align: center;
 }
 
@@ -234,12 +246,12 @@ body {
 }
 
 .project {
-    background-color: #C4C5BA;
+    background-color: var(--font-color-main);
     padding: 20px;
     border-radius: 10px;
     width: 300px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
 }
 
 .project:hover {
@@ -263,22 +275,22 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: #1B1B1B;
-    color: #C4C5BA;
+    background-color: var(--background-color);
+    color: var(--font-color-main);
 }
 
 /* Separator Styles */
 .separator {
     width: 100%;
     height: 2px;
-    background: linear-gradient(transparent, #C4C5BA);
+    background: linear-gradient(transparent, var(--font-color-main));
     margin: 60px 0;
 }
 
 /* Footer */
 footer {
-    background-color: #1B1B1B;
-    color: #C4C5BA;
+    background-color: var(--background-color);
+    color: var(--font-color-main);
     text-align: center;
     padding: 20px 0;
 }
@@ -290,17 +302,16 @@ html {
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    /* Tablet adjustments */
     .portfolio-title {
-        font-size: 8em; /* Adjust font size for tablets */
+        font-size: 8em;
     }
 
     .intro-details h1 {
-        font-size: 3.5em; /* Adjust name size */
+        font-size: 3.5em;
     }
 
     .intro-details h2 {
-        font-size: 2em; /* Adjust position size */
+        font-size: 2em;
     }
 
     .resume-btn {
@@ -323,11 +334,9 @@ html {
 }
 
 @media (max-width: 767px) {
-    /* Mobile adjustments */
     .navbar .menu {
         flex-direction: row;
         gap: 10px;
-        flex-wrap: nowrap
     }
 
     .home {
@@ -335,7 +344,7 @@ html {
     }
 
     .portfolio-title {
-        font-size: 4em; /* Adjust font size for mobile */
+        font-size: 4em;
     }
 
     .intro-details h1 {

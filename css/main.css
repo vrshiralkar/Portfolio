@@ -2427,7 +2427,7 @@ header .logo a {
 	color: #fa0003;
 }
 #message-success {
-	color: #141414;
+	color: #FFFFFF;
 }
 #message-warning i, #message-success i {
 	margin-right: 10px;
@@ -2682,6 +2682,12 @@ header .back-button:hover {
 }
 
 #about-text {
+    text-align: justify; /* Ensures the text is justified */
+    line-height: 1.6; /* Adjusts line spacing for better readability */
+    margin: 20px 0; /* Adds margin around the text for spacing */
+    font-size: 18px; /* Adjusts font size to make it more readable */
+}
+.about-text1 {
     text-align: justify; /* Ensures the text is justified */
     line-height: 1.6; /* Adjusts line spacing for better readability */
     margin: 20px 0; /* Adds margin around the text for spacing */
